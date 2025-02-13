@@ -127,14 +127,15 @@ class TSPSolver:
 if __name__ == "__main__":
     # Cost matrix from the problem
     cost_matrix = [
-        [0, 3, 14, 18, 15],
-        [3, 0, 4, 22, 20],
-        [17, 9, 0, 16, 4],
-        [6, 2, 7, 0, 12],
-        [9, 15, 11, 5, 0]
+        [0, 31, 15, 23, 10, 17],
+        [16, 0, 24, 7, 12, 12],
+        [34, 3, 0, 25, 54, 25],
+        [15, 20, 33, 0, 50, 40],
+        [16, 10, 32, 3, 0, 23],
+        [18, 20, 13, 28, 21, 0]
     ]
 
-    n = 5  # Number of cities
+    n = 6  # Number of cities
     solver = TSPSolver(n, cost_matrix)
     min_cost, optimal_path = solver.solve()
 

@@ -22,9 +22,10 @@ def main():
     b = tao(n)
 
     print(f"\nCác xâu nhị phân có độ dài {n}:")
-    for string in b:
-        print(string)
-    print(f"\nTổng số xâu: {len(b)}")
+    # for string in b:
+    #     print(string)
+    print({s for s in b})
+    # print(f"\nTổng số xâu: {len(b)}")
 
 
 if __name__ == "__main__":
